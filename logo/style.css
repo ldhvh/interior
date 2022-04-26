@@ -1,0 +1,499 @@
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 15px;
+    color: #000;
+    background-color: #FEF5ED
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 200px;
+}
+
+
+.column {
+    -ms-flex: 100%;
+    flex: 33.3%;
+    padding: 4px;
+}
+
+.column img {
+    margin-top: 5px;
+    vertical-align: middle;
+}
+*,
+*:before,
+*:after {
+    box-sizing:border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+.container {
+    width:100%;
+    max-width:1200px;
+    margin: 0 auto;
+}
+.intro{
+    width: 100%;
+    height: 110vh;
+    background: #FEF5ED;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__inner a{
+    font-size: 20px;
+}
+
+.logo img {
+    width: 300px;
+    padding-top: 20px;
+;
+
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 25px;
+    color: black;
+    text-decoration: none;
+    padding-top: 70px;
+    transition: color .1s linear;
+
+}
+.nav__link:after {
+    content: "";
+    display: block;
+    background-color:#ADC2A9 ;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: .1s linear;
+}
+
+.nav__link:hover {
+    color: #ADC2A9;
+}
+.nav__link:hover:after {
+    opacity: 1;
+}
+.section {
+    padding: 0;
+}
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+/*
+ # #    # ##### #####   ####
+ # ##   #   #   #    # #    #
+ # # #  #   #   #    # #    #
+ # #  # #   #   #####  #    #
+ # #   ##   #   #   #  #    #
+ # #    #   #   #    #  ####
+*/
+
+.intro {
+    width: 100%;
+    background: url('backgr.png') ;
+
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.intro__wrapper {
+    padding-top: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+}
+
+.intro__subtitle {
+    font-size: 15px;
+    position: relative;
+    margin-bottom: 37px;
+    padding-bottom: 45px;
+    opacity: 1;
+}
+
+.intro__subtitle::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 83px;
+    height: 1px;
+    background: #eeeede;
+}
+
+.intro__title {
+    max-width: 753px;
+    line-height: 1.4;
+    font-size: 45px;
+    margin-bottom: 43px;
+
+
+}
+
+.intro-btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    color: #fff;
+    font-size: 15px;
+    padding: 23px 48px 25px 50px;
+    border: 2px solid #99A799;
+    transition: .3s ease-out ;
+}
+
+.intro-btn:hover, .intro-btn:focus, .intro-btn:active {
+    background: #99A799;
+}
+
+/*
+ ######  ####### #     # #     # #       #######    #    ######
+ #     # #     # #  #  # ##    # #       #     #   # #   #     #
+ #     # #     # #  #  # # #   # #       #     #  #   #  #     #
+ #     # #     # #  #  # #  #  # #       #     # #     # #     #
+ #     # #     # #  #  # #   # # #       #     # ####### #     #
+ #     # #     # #  #  # #    ## #       #     # #     # #     #
+ ######  #######  ## ##  #     # ####### ####### #     # ####
+*/
+
+.download {
+    background: #99A799;
+    padding: 75px;
+}
+
+.download__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.download__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 95px;
+    letter-spacing: 1.1px;
+}
+
+.download-btn {
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    padding: 22px 39px;
+    background: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 27px;
+    border: 2px solid #fff;
+    transition: .3s ease-in-out;
+}
+
+.download-btn:hover, .download-btn:focus, .download-btn:active {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/*
+  ####  #####  ####  #####  #   #
+ #        #   #    # #    #  # #
+  ####    #   #    # #    #   #
+      #   #   #    # #####    #
+ #    #   #   #    # #   #    #
+  ####    #    ####  #    #   #
+*/
+
+.story__wrapper {
+    display: flex;
+
+}
+
+.story__main {
+    width: 50%;
+    padding-top: 76px;
+    background-color: #FEF5ED;
+}
+
+.story__pic {
+    width: 50%;
+}
+
+.story__title {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.story__subtitle {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #777777;
+    letter-spacing: 1.3px;
+    padding-bottom: 20px;
+    margin-bottom: 42px;
+    position: relative;
+}
+
+.story__subtitle::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: #000;
+}
+
+.story__text {
+    font-size: 15px;
+    line-height: 2;
+    color: #777777;
+    font-weight: 600;
+    max-width: 501px;
+    margin-bottom: 45px;
+}
+
+.story-btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid rgb(153, 167, 153);
+    padding: 18px 42px;
+    font-size: 15px;
+    transition: .3s linear;
+}
+
+.story-btn:hover, .story-btn:focus, .story-btn:active {
+    color: #fff;
+    background: rgb(153, 167, 153);
+}
+
+/*
+ #    # # #####  ######  ####
+ #    # # #    # #      #    #
+ #    # # #    # #####  #    #
+ #    # # #    # #      #    #
+  #  #  # #    # #      #    #
+   ##   # #####  ######  ####
+*/
+
+.video {
+
+    background-size: cover;
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+    z-index: 2;
+}
+
+.video::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(153, 167, 153);
+    z-index: 22;
+}
+
+.video__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 24;
+}
+
+
+.video__title {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.play-icon {
+    width: 90px;
+    height: 90px;
+    transition: .3s ease-out;
+    fill: #fff;
+}
+
+.play-icon:hover, .play-icon:focus, .play-icon:active {
+    opacity: .85;
+}
+
+/*fotter
+ */
+footer {
+    padding: 10px;
+
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer__logo {
+    margin-bottom: 40px;
+}
+
+.footer__social i {
+    font-size: 30px;
+    color: #000000;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    transition: .35s linear;
+    cursor: pointer;
+}
+
+.footer__social i:hover {
+    color: #c0a473;
+}
+
+.footer__title {
+    font-size: 14px;
+    color: #000000;
+    text-transform: none;
+}
+
+/* about
+
+ */
+
+
+.about--container {
+    padding: 0;
+    justify-content: space-between
+}
+
+.about__wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: left;
+
+}
+
+.about__main {
+    width: 50%;
+    padding-top: 76px;
+    background-color: #FEF5ED;
+}
+
+.about__pic {
+    width: 50%;
+}
+
+.about__title {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.about__subtitle {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #777777;
+    letter-spacing: 1.3px;
+    padding-bottom: 20px;
+    margin-bottom: 42px;
+    position: relative;
+}
+
+.about__subtitle::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: #000;
+}
+
+.about__text {
+    font-size: 15px;
+    line-height: 2;
+    color: #777777;
+    font-weight: 600;
+    max-width: 501px;
+    margin-bottom: 45px;
+}
+
